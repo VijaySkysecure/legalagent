@@ -1,0 +1,63 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+    "version": "1.1.0",
+    "manifestVersion": "1.15",
+    "id": "29ef63ec-eefb-4185-9a53-1dd139754bd0",
+    "packageName": "com.package.name",
+    "name": {
+        "short": "Legal0704-local",
+        "full": "Legal0704"
+    },
+    "developer": {
+        "name": "Microsoft",
+        "mpnId": "",
+        "websiteUrl": "https://jhnhr470-3000.inc1.devtunnels.ms/",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/terms-of-use"
+    },
+    "description": {
+        "short": "Custom copilot to chat with your data via RAG through Azure OpenAI On Your Data",
+        "full": "Custom copilot to chat with your data via RAG (retrieval augmentation generation) through Azure OpenAI On Your Data supported data sources:  Azure AI Search, Azure Blob Storage, URL/web address, Azure Cosmos DB for MongoDB vCore, uploaded files, and Elasticsearch."
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "conversations",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "chat",
+            "name": "Legal Assistant",
+            "contentUrl": "https://jhnhr470-3000.inc1.devtunnels.ms/chat",
+            "websiteUrl": "https://jhnhr470-3000.inc1.devtunnels.ms/chat",
+            "scopes": ["personal"]
+        }
+    ],
+    "bots": [
+        {
+            "botId": "8e99ea91-100d-4ee4-be27-069d3c63740e",
+            "needsChannelSelector": false,
+            "isNotificationOnly": false,
+            "scopes": ["personal", "team"],
+            "commandLists": [
+                {
+                    "scopes": ["personal"],
+                    "commands": [
+                        {
+                            "title": "Help",
+                            "description": "Show help"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "validDomains": ["jhnhr470-3000.inc1.devtunnels.ms"]
+}
+ 
