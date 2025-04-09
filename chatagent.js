@@ -4,11 +4,11 @@ import { AIProjectsClient } from "@azure/ai-projects";
 import { DefaultAzureCredential } from "@azure/identity";
 
 const client = AIProjectsClient.fromConnectionString(
-  "eastus.api.azureml.ms;a182fe30-ddfd-4f86-9bb2-9278c2f0c684;rg-nithin-9486_ai;nithin-8183",
+  "westus.api.azureml.ms;a182fe30-ddfd-4f86-9bb2-9278c2f0c684;7thApr2025-Hub;reserachagents7thapr2025",
   new DefaultAzureCredential()
 );
 
-const agentId = "asst_QX2vWprrYvkwJqUAX15rmmND";
+const agentId = "asst_4OzIi9DDiSIHcSWkTUZr1pbq";
 
 const rl = readline.createInterface({
   input: process.stdin,

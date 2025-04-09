@@ -4,7 +4,7 @@ import { AIProjectsClient } from "@azure/ai-projects";
 import { DefaultAzureCredential } from "@azure/identity";
 
 const app = express();
-const PORT = 3003;
+const PORT = 3005;
 
 app.use(express.json());
 
